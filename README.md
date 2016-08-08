@@ -5,6 +5,8 @@ A React, Webpack and CSS Modules project that generates static markup. All marku
 📕 [CSS Modules and React](https://css-tricks.com/css-modules-part-3-react/) 📕
 
 
+**Update**: I've added an additional css classname to the styles.css file,(is also called in the Button component) to show that you can call multiple classes from within a css file. 
+
 ## Getting started
 
 Hop into the terminal:
@@ -12,7 +14,7 @@ Hop into the terminal:
 1. `npm install`
 2. `npm start`
 
-BrowserSync will then open up a new tab where you can start to make new components and templates as you see fit. 
+BrowserSync will then open up a new tab where you can start to make new components and templates as you see fit.
 
 ## Workflow
 
@@ -29,7 +31,7 @@ React is used in this project not to build a complex web app but instead to orga
       style.css
 ```
 
-So in `Button.js` we create a standard React component and we import its styles so that Webpack can generate custom classnames: 
+So in `Button.js` we create a standard React component and we import its styles so that Webpack can generate custom classnames:
 
 ```
 import React from 'react'
@@ -44,7 +46,7 @@ export default class CoolButton extends React.Component {
 }
 ```
 
-And then we import that React component into one of the templates, such as `src/templates/Home.js`: 
+And then we import that React component into one of the templates, such as `src/templates/Home.js`:
 
 ```
 import React from 'react'
@@ -67,8 +69,8 @@ This way we get to generate custom classnames like CSS Modules but we also get s
 
 ## Improvements
 
-Since this is a concept for how you might want to organise your markup and CSS, this project contains as few dependencies as possible. I haven’t added Sass or PostCSS loaders into the Webpack config, and this project doesn’t support image files either. 
+Since this is a concept for how you might want to organise your markup and CSS, this project contains as few dependencies as possible. I haven’t added Sass or PostCSS loaders into the Webpack config, and this project doesn’t support image files either.
 
 ## Issues
 
-This is really just a proof of concept, but if you feel like there’s anything I’ve missed then don’t hesitate to open an issue. 
+This is really just a proof of concept, but if you feel like there’s anything I’ve missed then don’t hesitate to open an issue.
